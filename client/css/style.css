@@ -48,8 +48,8 @@ body * {
     border-radius: 2px;
     width: 400px;
     padding: 14px;
-    margin: 80px auto 20px;
-    position:relative;
+    margin: 40px auto 20px;
+    position:relative;  
 }
 
 .bar input{
@@ -98,8 +98,48 @@ ul li p{
     padding-top: 12px;
     color:#6e7a7f;
 }
+.searchResultRow
+{
+
+}
+
+.getDetail
+{
+    text-decoration: underline;
+    font-style: italic;
+    cursor: pointer;    
+}
 
 .usersDetail
 {
-    
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px;
 }
+
+.DetailRow
+{
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.rowTitle
+{
+    font-style: italic;
+    font-weight: bold;
+    color: #797979;
+}
+.gobacktosearch
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.homePage
+{
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px;
+}
+
+
+

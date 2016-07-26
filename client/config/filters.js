@@ -17,12 +17,14 @@ accountApp.filter('searchFor', function()
 
 		var result = [];
 
+		var searchStringText = searchString.toLowerCase();
+
 		// Using the forEach helper method to loop through the array
 		angular.forEach(arr, function(item)
 		{
-			console.log(item.accountNo.indexOf(searchString));
+			console.log(item.firstName.toLowerCase().indexOf(searchStringText));
 
-			if(item.accountNo.indexOf(searchString) !== -1)
+			if(item.firstName.toLowerCase().indexOf(searchStringText) !== -1)
 			{
 				result.push(item);
 			}

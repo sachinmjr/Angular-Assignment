@@ -1,11 +1,12 @@
 <div class="locInnerContainer" >
     <div class="bar">
-        <input type="text" ng-model="searchString" placeholder="Enter account number" />
+        <input type="text" ng-model="searchString" placeholder="Enter user name" />
     </div>
 
     <ul>
         <li ng-repeat="item in items | searchFor:searchString">
-            <div>{{item.firstName}} {{item.lastName}} <span ng-click="openDetail(item)"> Get Detail</span> </div>
+            <div class="searchResultRow">{{item.firstName}} {{item.lastName}}</div>
+            <div class="getDetail" ng-click="openDetail(item)"> Get Detail</div> 
         </li>
 
     </ul>
